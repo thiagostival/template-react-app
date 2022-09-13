@@ -1,0 +1,66 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "globals": {
+    "JSX": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb-typescript",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "jsx-a11y",
+    "react-hooks",
+    "import"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ],
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-alert": "warn",
+    "react/display-name": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.tsx",
+          "**/*.spec.tsx",
+          "**/setupTests.ts"
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    }
+  }
+}
