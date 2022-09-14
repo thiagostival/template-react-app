@@ -44,7 +44,7 @@ To run the project:
 - Clone the project by running this command in the terminal `git clone <repo_url>`;
 - Open the project folder in the terminal and run:
   - `yarn` or `npm install` -> To install all dependencies;
-  - `npm prepare` -> To configure the husky;
+  - `npm run prepare` -> To configure the husky;
   - `yarn dev` or `npm run dev` -> To run the project;
 - To run the tests just run `yarn test` or `npm run test`.
 - To apply the eslint settings and standardize the code, run: `yarn lint` or `npm run lint`.
