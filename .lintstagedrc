@@ -1,0 +1,9 @@
+{
+  "*.{ts,tsx}": [
+    "npm run prettier:fix",
+    "npm run lint:fix"
+  ],
+  "*.{css, module.css}": [
+    "npm run lint:css"
+  ]
+}
