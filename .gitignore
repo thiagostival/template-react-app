@@ -7,10 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# project files
 node_modules
 dist
 dist-ssr
 *.local
+.eslintcache
 
 # Editor directories and files
 .vscode/*
@@ -23,5 +25,12 @@ dist-ssr
 *.sln
 *.sw?
 
+# test reports
+coverage
+/coverage/
+**/coverage/*
+
+# ambient vars
 .env
-package-lock.json
+.env.local
+.env.production
